@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!DOCTYPE script>
+<html>
+<head>
+	
+</head>
+<body>
+
+
+<script>
+	var first;
+	first = window.prompt("Please enter a number");
+	var second;
+	second = window.prompt("Please enter another number");
+	if(first>second){
+		document.body.style.backgroundColor = "lightblue"
+		document.writeln("firstInput > secondInput");
+	}
+	else if(second>first){
+		document.body.style.backgroundColor = "lightgreen"
+		document.writeln("secondInput > firstInput");
+	}
+	else if(second==first){
+		document.body.style.backgroundColor = "lightyellow"
+		document.writeln("secondInput == firstInput");
+	}
+</script>
+
+<input type = "button" value = "show the first input" onClick="alert(first)">
+<input type = "button" value = "show the second input" onClick="alert(second)">
+
+</body>
+</html>
